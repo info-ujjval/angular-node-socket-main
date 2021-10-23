@@ -1,0 +1,7 @@
+<input type="text" #name>
+<button type="button" (click)="onClick(name.value)">Submit</button>
+<div *ngIf="nameList && nameList.length > 0">
+  <div *ngFor="let item of nameList">
+    {{item}}
+  </div>
+</div>
